@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Produtos</title>
+    <link rel="stylesheet" href="../Estilos/adicionarProdutos.css">
+    <script src="../Scripts/adicionarProdutos.js"></script>
 </head>
 <body>
-    <h1>Adicionar Produtos</h1>
+    <nav>
+        <a href="adicionarProdutos.html">ADICIONAR PRODUTOS</a>
+        <a href="orcamento.html">GERAR ORÇAMENTO</a>
+        <a href="catalogo.html">CATÁLOGO</a>
+    </nav>
+    <h2>ADICIONAR PRODUTOS</h2>
+
+    <form id="cadastrar">
+        <label for="valorID">ID:</label>
+        <input type="number" name="" id="valorID" readonly>
+    <br>
+        <label for="valorProduto">Produto:</label>
+        <input type="text" name="" id="valorProduto" autofocus>
+    <br>
+        <label for="valorPreco">Preço:</label>
+        <input type="number" name="" id="valorPreco">
+    <br>
+        <button id="botaoverde" onclick="Salvar()">Salvar</button>
+        <button type="reset" id="botaovermelho">Cancelar</button>
+    </form>
+    <p id="escrever"></p>
+
+    <div id="listadeprodutos">
+
+        <div style='display: flex;'>
+            <input style='flex:1' placeholder="PESQUISAR"  id='inputPesquisa'/>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                </tr>
+            </thead>
+            <tbody id="corpodalistadeprodutos">
+
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamento</title>
+    <link rel="stylesheet" href="../Estilos/orcamento.css">
+    <script src="../Scripts/orcamento.js"></script>
 </head>
 <body>
-    <h1>Orçamento</h1>
+    
+    <nav>
+        <a href="adicionarProdutos.html">ADICIONAR PRODUTOS</a>
+        <a href="orcamento.html">GERAR ORÇAMENTO</a>
+        <a href="catalogo.html">CATÁLOGO</a>
+    </nav>
+    <h2>FAZER ORÇAMENTO</h2>
+    <h3>VALORES</h3>
+    <label for="nomePeca">Nome da Peça:</label>
+    <input type="text" name="" id="nomePeca" placeholder="EX: Bancada, soleira, etc">
+<br>
+    <label for="corPedra">Cor da Pedra:</label>
+    <input type="text" name="" id="corPedra">
+<br>
+    <label for="comprimento">Comprimento:</label>
+    <input type="number" name="" id="comprimento">
+
+    <label for="largura">Largura:</label>
+    <input type="number" name="" id="largura">
+<br>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()" id="limpar">Limpar</button>
+
+    <h3>PDF</h3>
+    <label for="nomeProjeto">Nome do Orçamento:</label>
+    <input type="text" name="" id="nomeProjeto" placeholder="Nome do Orçamento">
+
+
+
+    <h3>VISUALIZAÇÃO DO PDF</h3>
+    <p id="resultadoPDF">
+        
+    </p>
 </body>
 </html>
